@@ -79,5 +79,5 @@ lig-plus-chain = "without-notch"
 lig-double-arrow-bar = "without-notch"
 lig-single-arrow-bar = "without-notch"
 
-  [buildPlans.IosevkaCustom.ligations]
-  inherits = "javascript"
+[buildPlans.IosevkaCustom.ligations]
+inherits = "javascript"
