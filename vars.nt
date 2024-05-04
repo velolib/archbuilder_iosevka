@@ -132,6 +132,7 @@ charvars:
   seven: curly-serifless
   eight: crossing-asymmetric
   nine: straight-bar
+  tittle: round
   diacritic-dot: round
   punctuation-dot: round
   tilde: low
