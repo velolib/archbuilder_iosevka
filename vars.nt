@@ -141,7 +141,7 @@ charvars:
   caret: high
   paren: normal
   brace: curly
-  number-sign: upright-tall
+  number-sign: slanted
   ampersand: flat-top
   at: fourfold-solid-inner-tall
   dollar: open-cap
