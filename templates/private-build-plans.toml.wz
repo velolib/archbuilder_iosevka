@@ -1,4 +1,4 @@
-@require(charvars, italic_overrides, spacings, custom_weights, use_custom_weights, contextual_widths)
+@require(charvars, italic_overrides, spacings, custom_weights, use_custom_weights, contextual_widths, extra_widths)
 @(
     contextual_widths = str(contextual_widths).lower()
 )\
@@ -31,6 +31,53 @@ inherits = "dlig"
 # disables = []
 # enables = []
 
+[buildPlans.@{plan}.widths.Normal]
+shape = 500
+menu = 5
+css = "normal"
+
+@if 'condensed' in extra_widths:
+[buildPlans.@{plan}.widths.Condensed]
+shape = 416
+menu = 3
+css = "condensed"
+
+@end
+@if 'semi-condensed' in extra_widths:
+[buildPlans.@{plan}.widths.SemiCondensed]
+shape = 456
+menu = 4
+css = "semi-condensed"
+
+@end
+@if 'semi-extended' in extra_widths:
+[buildPlans.@{plan}.widths.SemiExtended]
+shape = 548
+menu = 6
+css = "semi-expanded"
+
+@end
+@if 'extended' in extra_widths:
+[buildPlans.@{plan}.widths.Extended]
+shape = 600
+menu = 7
+css = "expanded"
+
+@end
+@if 'extra-extended' in extra_widths:
+[buildPlans.@{plan}.widths.ExtraExtended]
+shape = 658
+menu = 8
+css = "extra-expanded"
+
+@end
+@if 'ultra-extended' in extra_widths:
+[buildPlans.@{plan}.widths.UltraExtended]
+shape = 720
+menu = 9
+css = "ultra-expanded"
+
+@end
 # [buildPlans.@{plan}.variants]
 # inherits = "ss16"
 

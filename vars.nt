@@ -1,5 +1,5 @@
 build:
-  # Uncomment the ones you wish to build
+  # Uncomment the ones you wish to build:
   - ttf-iosevka-custom-git
   - ttf-iosevka-term-custom-git
   - ttf-iosevka-quasi-proportional-custom-git
@@ -7,6 +7,14 @@ build:
   # - ttf-iosevka-fixed-custom-git
   # - ttf-iosevka-fontconfig-mono-custom-git
   # - ttf-iosevka-quasi-proportional-extension-only-custom-git
+extra_widths:
+  # Uncomment the ones you wish to build:
+  # - condensed
+  # - semi-condensed
+  - semi-extended
+  - extended
+  # - extra-extended
+  # - ultra-extended
 spacings:
   # No need to change this list
   - normal
