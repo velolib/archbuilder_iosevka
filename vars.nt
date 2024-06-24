@@ -96,6 +96,7 @@ charvars:
   x: curly-serifless
   y: curly-serifless
   z: straight-serifless-with-crossbar
+  capital-eszet: flat-top-serifed
   long-s: flat-hook-tailed
   eszet: longs-s-lig-tailed-serifless
   lower-eth: straight-bar
