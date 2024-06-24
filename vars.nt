@@ -100,7 +100,8 @@ charvars:
   long-s: flat-hook-tailed
   eszet: longs-s-lig-tailed-serifless
   lower-eth: straight-bar
-  lower-thorn: serifed
+  capital-thorn: serifed
+  lower-thorn: serifless
   lower-alpha: crossing
   capital-gamma: bottom-serifed
   capital-delta: curly
