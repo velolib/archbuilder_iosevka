@@ -147,6 +147,7 @@ charvars:
   tittle: round
   diacritic-dot: round
   punctuation-dot: round
+  braille-dot: round
   tilde: low
   asterisk: turn-hex-high
   underscore: high
