@@ -103,16 +103,20 @@ charvars:
   capital-thorn: serifed
   lower-thorn: serifless
   lower-alpha: crossing
+  lower-beta: standard
   capital-gamma: bottom-serifed
+  lower-gamma: casual
   capital-delta: curly
   lower-delta: rounded
   lower-iota: tailed-serifed
   capital-lambda: curly-top-serifed
   lower-lambda: tailed-turn
   lower-mu: tailed-serifless
+  lower-nu: casual
   lower-xi: flat-top
   lower-pi: tailed
   lower-tau: flat-tailed
+  lower-upsilon: casual-serifless
   lower-chi: semi-chancery-straight-serifless
   cyrl-a: single-storey-earless-corner-tailed
   cyrl-ve: cursive
@@ -124,7 +128,9 @@ charvars:
   cyrl-ka: curly-serifless
   cyrl-el: straight
   cyrl-em: slanted-sides-hanging-serifed
+  cyrl-capital-en: top-left-bottom-right-serifed
   cyrl-en: tailed-top-left-serifed
+  cyrl-capital-er: open-serifless
   cyrl-er: earless-rounded-serifless
   cyrl-capital-u: cursive-flat-hook-serifless
   cyrl-u: cursive-flat-hook-serifless
