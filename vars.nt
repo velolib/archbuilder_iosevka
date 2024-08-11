@@ -117,7 +117,9 @@ charvars:
   lower-pi: tailed
   lower-tau: flat-tailed
   lower-upsilon: casual-serifless
+  lower-phi: cursive
   lower-chi: semi-chancery-straight-serifless
+  lower-psi: serifless
   cyrl-a: single-storey-earless-corner-tailed
   cyrl-ve: cursive
   cyrl-capital-zhe: curly
