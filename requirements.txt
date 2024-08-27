@@ -10,7 +10,7 @@ nt2==0.2.6                # via -r requirements.in
 plumbum==1.8.3            # via nt2
 pygments==2.18.0          # via rich
 python-dateutil==2.9.0.post0  # via arrow, yamlpath
-rich==13.7.1              # via nt2
+rich==13.8.0              # via nt2
 ruamel-yaml==0.17.21      # via nt2, yamlpath
 ruamel-yaml-clib==0.2.8   # via ruamel-yaml
 six==1.16.0               # via inform, python-dateutil
