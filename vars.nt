@@ -29,7 +29,7 @@ spacings:
   # ^ non-mono
   - quasi-proportional-extension-only
   # ^ non-mono without making anything narrower (e.g. "i" is still wide)
-build_webfonts: yes
+build_webfonts: no
 use_custom_weights: yes
 contextual_widths: yes
 branch: dev
