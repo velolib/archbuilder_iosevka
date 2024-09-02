@@ -167,14 +167,14 @@ charvars:
   number-sign: slanted
   ampersand: flat-top
   at: fourfold-solid-inner-tall
-  dollar: open-cap
+  dollar: slanted-interrupted-cap
   percent: rings-segmented-slash
   bar: natural-slope
   ascii-single-quote: raised-comma
   ascii-grave: straight
   question: smooth
   pilcrow: low
-  cent: open-cap
+  cent: slanted-bar-interrupted-cap
   partial-derivative: curly-bar
   micro-sign: toothed-serifless
   guillemet: curly
