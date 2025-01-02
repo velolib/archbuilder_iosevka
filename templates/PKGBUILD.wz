@@ -1,4 +1,4 @@
-@require(spacing, pbp_sha256, build_webfonts, branch)
+@require(spacing, pbp_sha256, build_webfonts, branch, use_custom_name, custom_name)
 @(
     name = f"ttf-iosevka-{spacing}-custom"
     if spacing == 'normal':
@@ -12,6 +12,11 @@
         plan = 'IosevkaFcmCustom'
     else:
         plan = f"Iosevka{spacing.title()}Custom"
+
+    plan_rename = plan
+    if use_custom_name:
+        import re
+        plan_rename = re.sub(r'Iosevka(.*)Custom', custom_name.replace(' ', '') + r'\1', plan)
 )\
 # Maintainer: Andy Kluger <https://t.me/andykluger>
 # Contributor: Markus Weimar <mail@@markusweimar.de>
@@ -61,9 +66,23 @@ build () {
 package () {
   install -d "${pkgdir}/usr/share/fonts/TTF"
   install -m644 Iosevka/dist/@{plan}/TTF/*.ttf "${pkgdir}/usr/share/fonts/TTF/"
+@if plan_rename != plan:
+  cd "${pkgdir}/usr/share/fonts/TTF/"
+  for f in *.ttf; do
+    mv "$f" "${f/@{plan}/@{plan_rename}}"
+  done
+  cd "${srcdir}"
+@end
 @if build_webfonts:
   install -d "${pkgdir}/usr/share/fonts/WOFF2"
   install -m644 Iosevka/dist/@{plan}/WOFF2/*.woff2 "${pkgdir}/usr/share/fonts/WOFF2/"
+@if plan_rename != plan:
+  cd "${pkgdir}/usr/share/fonts/WOFF2/"
+  for f in *.woff2; do
+    mv "$f" "${f/@{plan}/@{plan_rename}}"
+  done
+  cd "${srcdir}"
+@end
   printf '%s\n' 'CSS BELOW:'
   cat Iosevka/dist/@{plan}/*.css
   printf '%s\n' 'CSS ABOVE'
