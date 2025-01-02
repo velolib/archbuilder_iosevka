@@ -6,19 +6,23 @@
 @(
     if spacing == 'normal':
         plan = 'IosevkaCustom'
-        family = 'Iosevka Custom' if not use_custom_name else custom_name
+        family = 'Iosevka Custom'
     elif spacing == 'quasi-proportional':
         plan = 'IosevkaQpCustom'
-        family = 'Iosevka QP Custom' if not use_custom_name else f"{custom_name} QP"
+        family = 'Iosevka QP Custom'
     elif spacing == 'quasi-proportional-extension-only':
         plan = 'IosevkaQpeCustom'
-        family = 'Iosevka QPE Custom' if not use_custom_name else f"{custom_name} QPE"
+        family = 'Iosevka QPE Custom'
     elif spacing == 'fontconfig-mono':
         plan = 'IosevkaFcmCustom'
-        family = 'Iosevka FCM Custom' if not use_custom_name else f"{custom_name} FCM"
+        family = 'Iosevka FCM Custom'
     else:
         plan = f"Iosevka{spacing.title()}Custom"
-        family = f"Iosevka {spacing.title()} Custom" if not use_custom_name else f"{custom_name} {spacing.title()}"
+        family = f"Iosevka {spacing.title()} Custom"
+
+    if use_custom_name:
+        import re
+        family = re.sub(r'Iosevka( [^ ]*)? Custom', custom_name + r'\1', family)
 )\
 [buildPlans.@{plan}]
 family = "@family"
